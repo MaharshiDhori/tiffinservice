@@ -1,0 +1,103 @@
+#login  {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #b8dba0, #1e3732);  
+  color: #4a5c23;
+  box-sizing: border-box;
+}
+  
+  .container h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #2a403c;
+  }
+  
+  .input-field {
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .input-field input {
+    width: 90%;
+    padding: 10px 15px;
+    border: 2px solid #2a403c;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-field input:focus {
+    border-color: #94b87d;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+    user-select: none;
+  }
+  
+  .toggle-password:hover {
+    color: #4a5c23;
+  }
+  
+  .btn {
+    width: 60%;
+    padding: 10px 0;
+    background-color: #435a55;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition:  0.3s;
+  }
+  
+  .btn:hover {
+    background: #7b9b61;
+  }
+  
+  .register {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .register a {
+    color: #2a403c;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .register a:hover {
+    border-color: #528b2f;
+  }
+  .leaf-decor {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('https://img.icons8.com/ios-filled/100/4a5c23/leaf.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.1;
+  }
+  
+  .leaf-decor.top-left {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .leaf-decor.bottom-right {
+    bottom: 20px;
+    right: 20px;
+  }
