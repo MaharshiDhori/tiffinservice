@@ -8,7 +8,7 @@ const Chef = () => {
       <div className="sidebar">
         <h2>Chef Portal</h2>
         <ul>
-          <li><Link to="#dashboard">Dashboard</Link></li>
+          <li><Link to="/homepage">Dashboard</Link></li>
           <li><Link to="#recipes">Manage Recipes</Link></li>
           <li><Link to="#menu-planning">Menu Planning</Link></li>
           <li><Link to="#order-preparation">Order Preparation</Link></li>

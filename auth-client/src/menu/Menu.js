@@ -1,13 +1,31 @@
 import React from 'react'
 import  "./Menu.css";
 import { Link } from "react-router-dom";
+import img2 from "../../src/menu/img/dal tadka 2.jpg";
+import img3 from "../../src/menu/img/paneer masala.jpg";
+import img4 from "../../src/menu/img/chicken curry.jpg";
+import img5 from "../../src/menu/img/aloo gobi.jpg";
+import img1 from "../../src/menu/img/veg thali.jpg";
+
+import img6 from "../../src/menu/img/chole.jpg";
+import img7 from "../../src/menu/img/veg biryani.jpg";
+import img8 from "../../src/menu/img/butter naan.jpg";
+import img9 from "../../src/menu/img/dosa.jpg";
+import img10 from "../../src/menu/img/palak paneer.jpg";
+
+import img11 from "../../src/menu/img/fish curry.jpg";
+import img12 from "../../src/menu/img/aloo paratha.jpg";
+import img13 from "../../src/menu/img/veg pulav.jpg";
+import img14 from "../../src/menu/img/butter chicken.jpg";
+
+
 
 
 const Menu = () => {
   return (
     <>
     <main id='menu' className='menus'>
-     <Link to="\homepage" class="back-btn">← Back to Home</Link>
+    <Link to="/homepage" class="back-btn">← Back to Home</Link> 
      
      <section class="menu-container">
         <div class="menu">
@@ -16,7 +34,8 @@ const Menu = () => {
         <div class="menu-cards">
            {/* <!-- Add all 16 items --> */}
           <div class="menu-card">
-              <img src='../../public/img/dal tadka 2.jpg' alt="Dish 1"/>
+              
+              <img src={img1} alt="Dish 1"/>
               <h3>Veg Thali</h3>
               <p>
                 A wholesome-tasty vegetarian meal with 1 bowl (200g) of rice, 2
@@ -30,7 +49,8 @@ const Menu = () => {
               data-description="Rice, Chapati, Curry" >Add to Cart</button> 
           </div>
             <div class="menu-card">
-              <img src="../../public/img/dal tadka 2.jpg" alt="Dish 2" />
+             
+              <img src={img2} alt="Dish 2"/>
               <h3>Paneer Butter Masala</h3>
               <p>
                 Rich and creamy paneer butter masala served with 2 naans and 1
@@ -47,7 +67,8 @@ const Menu = () => {
             </button>   
             </div>
             <div class="menu-card">
-              <img src="../../public/img/dal tadka 2.jpg" alt="Dish 3" />
+            
+              <img src={img3} alt="Dish 3"/>
               <h3>Dal Tadka</h3>
               <p>
                 Delicious dal cooked with aromatic spices, served with 1 bowl
@@ -64,7 +85,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="/menu\img\chicken curry.jpg" alt="Dish 4" />
+            
+              <img src={img4} alt="Dish 4"/>
               <h3>Chicken Curry</h3>
               <p>
                 Spicy and flavorful chicken curry served with 1 bowl (200g) of
@@ -82,7 +104,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="/menu\img\aloo gobi.jpg" alt="Dish 5" />
+            
+              <img src={img5} alt="Dish 5"/>
               <h3>Aloo Gobi</h3>
               <p>
                 A flavorful vegetarian aloo and gobi, paired with 1 bowl (200g)
@@ -99,7 +122,8 @@ const Menu = () => {
             </button>           
              </div>
             <div class="menu-card">
-              <img src="/menu\img\chole.jpg" alt="Dish 6" />
+           
+              <img src={img6} alt="Dish 6"/>
               <h3>Chole Bhature</h3>
               <p>
                 Famous Punjabi dish with spicy chickpeas (200g) and 2 mouth
@@ -117,7 +141,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="/menu\img\veg biryani.jpg" alt="Dish 7" />
+            
+              <img src={img7} alt="Dish 7"/>
               <h3>Veg Biryani</h3>
               <p>
                 Fragrant and flavorful vegetable biryani (250g) served with 1
@@ -135,7 +160,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="/menu\img\butter naan.jpg" alt="Dish 8" />
+            
+              <img src={img8} alt="Dish 8"/>
               <h3>Butter Naan & Curry</h3>
               <p>
                 Soft, buttery 2 naan (100g each) served with 1 bowl (150g) of
@@ -153,7 +179,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="/menu\img\dosa.jpg" alt="Dish 9" />
+            
+              <img src={img9} alt="Dish 9"/>
               <h3>Masala Dosa</h3>
               <p>
                 Crispy dosa (150g) stuffed with spiced potatoes (100g), served
@@ -170,7 +197,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="/menu\img\palak paneer.jpg" alt="Dish 10" />
+             
+              <img src={img10} alt="Dish 10"/>
               <h3>Palak Paneer</h3>
               <p>
                 Spinach (200g) and paneer cooked with Indian spices, served with
@@ -187,7 +215,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="/menu\img\fish curry.jpg" alt="Dish 11" />
+           
+              <img src={img11} alt="Dish 11"/>
               <h3>Fish Curry</h3>
               <p>
                 Fresh fish (150g) cooked in a tangy and spicy curry sauce,
@@ -204,7 +233,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="/menu\img\aloo paratha.jpg" alt="Dish 12" />
+              
+              <img src={img12} alt="Dish 12"/>
               <h3>Aloo Paratha</h3>
               <p>
                 2 Whole wheat flatbreads stuffed with spiced mashed
@@ -221,7 +251,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="/menu\img\veg pulav.jpg" alt="Dish 13" />
+             
+              <img src={img13} alt="Dish 13"/>
               <h3>Veg Pulao</h3>
               <p>
                 A flavorful tasty rice dish (250g) mixed with vegetables and aromatic
@@ -238,7 +269,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="/menu\img\butter chicken.jpg" alt="Dish 14" />
+             
+              <img src={img14}  alt="Dish 14"/>
               <h3>Butter Chicken</h3>
               <p>
                 Tender chicken (150g) cooked in a creamy tomato-based sauce,
@@ -255,7 +287,8 @@ const Menu = () => {
             </button>
             </div>
             <div class="menu-card">
-              <img src="tiffin15.jpg" alt="Dish 15" />
+            
+              <img  alt="Dish 15"/>
               <h3>Hakka Noodles</h3>
               <p>
                 bowl full of Stir-fried yummy noodles (250g) with vegetables and

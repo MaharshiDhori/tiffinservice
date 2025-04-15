@@ -10,6 +10,7 @@ const orderItemRoutes = require('./routes/orderItem');
 const paymentRoutes = require('./routes/payment');
 const adminRoutes = require('./routes/admin');
 const roleRoutes = require('./routes/roles');
+const userRoutes = require('./routes/userRoutes');
 
 const app = express();
 
@@ -26,7 +27,8 @@ app.use('/api', orderRoutes);
 app.use('/api', orderItemRoutes);
 app.use('/api', paymentRoutes);
 app.use('/admin', adminRoutes);  
-app.use('/api/roles', roleRoutes);           
+app.use('/api/roles', roleRoutes); 
+app.use('/api/users', userRoutes);         
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {

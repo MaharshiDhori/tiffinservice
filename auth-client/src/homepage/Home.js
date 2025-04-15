@@ -1,12 +1,23 @@
 import React from 'react'
 import "./Home.css";
 import { Link } from 'react-router-dom';
+//import img1 from "../../src/menu/img/chole.jpg";
+import img1 from "../../src/homepage/img/tiffinHP.png";
+import img2 from "../../src/homepage/img/Food_Dish1.png";
+
+import img3 from "../../src/homepage/img/img4.jpg";
+import img4 from "../../src/homepage/img/tiffin img.jpg";
+import img5 from "../../src/homepage/img/tifin img 1.jpg";
+import img6 from "../../src/homepage/img/tiffins.jpg";
+import img7 from "../../src/homepage/img/dosa tifin img.jpg";
+
+const disimg = [img3 , img4 , img5 , img6 , img7]
 
 const Home = () => {
   const toggleCart = ()=>{
     
   }
-return (
+return ( 
 
 <>
 <main id='Home'>
@@ -38,10 +49,12 @@ return (
 <section className="homepage" id="homepage">
   <div className="decor-circle"></div>
   <div className="tiffin_homePg">
-    <img src="/homepage/img/tiffinHP.png" alt="tiffin" />
+   {/* <img src="/homepage/img/tiffinHP.png" alt="tiffin" />*/}
+    <img src={img1} alt="tiffin" />
   </div>
   <span className="mainDish-img">
-    <img src="/homepage/img/Food_Dish1.png" alt="dish" />
+   {/* <img src="/homepage/img/Food_Dish1.png" alt="dish" />*/}
+    <img src={img2} alt="dish" />
   </span>
   <div className="DECOR">
     <div className="decor_trasp_circle-3"></div>
@@ -70,9 +83,9 @@ Let's start to order now!
     "Bringing home-cooked goodness to your doorstep – fresh, delicious, and made with love."
   </div>
   <div className="abtUs_img">
-    {['img4.jpg', 'tiffin img.jpg', 'tifin img 1.jpg', 'tiffins.jpg', 'dosa tifin img.jpg'].map((img, idx) => (
+    {disimg.map((img, idx) => (
       <div className="abt_img" key={idx}>
-        <img src={`/homepage/img/${img}`} alt="tiffin" />
+        <img src={img} alt="tiffin" />
       </div>
     ))}
   </div>

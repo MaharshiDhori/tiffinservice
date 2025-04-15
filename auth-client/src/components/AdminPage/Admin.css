@@ -1,0 +1,80 @@
+.admin-container {
+    font-family: Cambria, serif;
+    background-color: #b8bb9d;
+    min-height: 100vh;
+  }
+  
+  .admin-header nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #152d29;
+    color: #fff;
+    padding: 0 20px;
+  }
+  
+  .logo-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bbbf9a;
+  }
+  
+  .admin-body {
+    display: flex;
+    margin-top: 60px;
+  }
+  
+  .admin-sidebar {
+    width: 250px;
+    background: linear-gradient(#677750, #2a4b46);
+    color: #fff;
+    padding: 20px;
+    height: calc(100vh - 60px);
+  }
+  
+  .admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-sidebar li {
+    margin: 15px 0;
+  }
+  
+  .admin-sidebar a {
+    text-decoration: none;
+    color: #bbbf9a;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .admin-sidebar a:hover {
+    color: #fff;
+  }
+  
+  .admin-dashboard {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #e6e8d7;
+  }
+  
+
+  .user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .user-list th, .user-list td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .user-form {
+    margin-bottom: 1rem;
+  }
+  
+  .user-form input {
+    margin-right: 10px;
+    padding: 6px;
+  }

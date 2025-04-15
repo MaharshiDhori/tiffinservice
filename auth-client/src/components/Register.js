@@ -42,8 +42,9 @@ const Register = () => {
     if (!validateForm()) return;
 
     try {
-      const res = await API.post('/auth/register', formData);
+      const res = await API.post('/api/auth/register', formData);
       alert('Registered successfully!');
+    
       console.log(res.data);
       navigate('/login');
     } catch (err) {
